@@ -1,0 +1,13 @@
+{"level":"info","message":"GET /","timestamp":"2025-04-11T07:59:24.970Z"}
+{"level":"info","message":"GET /","timestamp":"2025-04-11T07:59:56.349Z"}
+{"level":"info","message":"GET /api/users","timestamp":"2025-04-11T08:01:22.526Z"}
+{"level":"error","message":"Cannot destructure property 'name' of 'req.body' as it is undefined.","timestamp":"2025-04-11T08:02:57.572Z"}
+{"level":"error","message":"Cannot destructure property 'name' of 'req.body' as it is undefined.","timestamp":"2025-04-11T08:04:24.588Z"}
+{"level":"error","message":"Cannot destructure property 'name' of 'req.body' as it is undefined.","timestamp":"2025-04-11T08:05:09.521Z"}
+{"level":"info","message":"GET /","timestamp":"2025-04-11T08:11:52.161Z"}
+{"level":"info","message":"GET /","timestamp":"2025-04-11T08:11:52.975Z"}
+{"level":"error","message":"Validation failed: No body provided for POST /users","timestamp":"2025-04-11T08:12:17.003Z"}
+{"level":"error","message":"Validation failed: No body provided for POST /users","timestamp":"2025-04-11T08:13:48.941Z"}
+{"level":"error","message":"Validation failed: No body provided for POST /users","timestamp":"2025-04-11T08:14:03.932Z"}
+{"level":"error","message":"Validation failed: No body provided for POST /users","timestamp":"2025-04-11T08:14:07.457Z"}
+{"level":"error","message":"Validation failed: No body provided for POST /users","timestamp":"2025-04-11T08:17:15.175Z"}

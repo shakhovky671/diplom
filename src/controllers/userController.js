@@ -1,19 +1,34 @@
 const pool = require('../config/db');
+const userModel = require('../models/userModel');
 exports.getUsers = async(req, res) => {
     try {
+        await userModel.createTable();
         const result = await pool.query('SELECT * FROM users');
         res.status(200).json(result.rows);
     } catch (err) {
-        res.status(500).json({ error: err.message });
+        res.status(500).json({
+            success: false,
+            error: err.message,
+            path: req.path,
+            method: req.method
+        });
     }
 };
 exports.createUser = async(req, res) => {
     const { name, email } = req.body;
     try {
-        const result = await pool.query('INSERT INTO users (name, email) VALUES ($1, $2) RETURNING * ', [name, email]);
+        await userModel.createTable();
+        const result = await pool.query(
+            'INSERT INTO users (name, email) VALUES ($1, $2) RETURNING *', [name, email]
+        );
         res.status(201).json(result.rows[0]);
     } catch (err) {
-        res.status(500).json({ error: err.message });
+        res.status(500).json({
+            success: false,
+            error: err.message,
+            path: req.path,
+            method: req.method
+        });
     }
 };
 exports.updateUser = async(req, res) => {
