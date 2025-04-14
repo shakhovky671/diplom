@@ -2,10 +2,12 @@ require('dotenv').config();
 const express = require('express');
 const pool = require('./config/db');
 const routes = require('./routes');
+const authRoutes = require('./routes/authRoutes');
 const app = express();
 const logger = require('./logger');
 app.use(express.json());
 app.use('/', routes);
+app.use('/auth', authRoutes);
 
 app.use((req, res, next) => {
     logger.info(`${req.method} ${req.url}`);

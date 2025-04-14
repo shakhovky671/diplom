@@ -11,3 +11,4 @@
 {"level":"error","message":"Validation failed: No body provided for POST /users","timestamp":"2025-04-11T08:14:03.932Z"}
 {"level":"error","message":"Validation failed: No body provided for POST /users","timestamp":"2025-04-11T08:14:07.457Z"}
 {"level":"error","message":"Validation failed: No body provided for POST /users","timestamp":"2025-04-11T08:17:15.175Z"}
+{"level":"error","message":"Validation failed: Missing fields (name) for POST /register","timestamp":"2025-04-11T09:54:58.969Z"}
